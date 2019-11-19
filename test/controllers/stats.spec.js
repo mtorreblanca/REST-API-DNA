@@ -23,10 +23,5 @@ describe("Stats Controller", function() {
         done();
       });
     });
-
-    it("Should return error", function(done) {
-      var req = {};
-      statsController.getStats();
-    });
   });
 });

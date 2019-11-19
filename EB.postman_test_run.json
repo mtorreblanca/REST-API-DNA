@@ -1,0 +1,508 @@
+{
+	"id": "fadd3c1e-4acb-4836-92bc-3b6ae87bfe7c",
+	"name": "EB",
+	"allTests": [],
+	"timestamp": "2019-11-19T05:04:04.880Z",
+	"collection_id": "be603d75-ef1b-40f5-916f-a977c3f08059",
+	"folder_id": "de041a52-97e5-423a-83fa-ddc46e456e0d",
+	"target_type": "folder",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "be603d75-ef1b-40f5-916f-a977c3f08059",
+		"name": "DNA Test",
+		"description": null,
+		"auth": null,
+		"events": null,
+		"variables": null,
+		"order": [
+			"1cb8e7c4-2d98-46d1-93f8-17ebd4867ae3"
+		],
+		"folders_order": [
+			"de041a52-97e5-423a-83fa-ddc46e456e0d"
+		],
+		"owner": "9496417",
+		"permissions": {},
+		"favorite": true,
+		"shared": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": {
+		"id": "de041a52-97e5-423a-83fa-ddc46e456e0d",
+		"name": "EB",
+		"description": null,
+		"auth": null,
+		"events": null,
+		"collection": "be603d75-ef1b-40f5-916f-a977c3f08059",
+		"folder": null,
+		"order": [
+			"8b6e04a0-c165-4e83-a063-8c65d421171d"
+		],
+		"folders_order": [],
+		"type": "folder",
+		"depth": 1
+	},
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "http://teamknowlogydna-env.24csbvpgt9.us-east-1.elasticbeanstalk.com/mutation",
+			"id": "8b6e04a0-c165-4e83-a063-8c65d421171d",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"Body includes hasMutation": true
+			},
+			"testPassFailCounts": {
+				"Body includes hasMutation": {
+					"pass": 100,
+					"fail": 0
+				}
+			},
+			"times": [
+				"2376",
+				"215",
+				"809",
+				"1782",
+				"3072",
+				"200",
+				"180",
+				"678",
+				"280",
+				"132",
+				"140",
+				"174",
+				"200",
+				"156",
+				"153",
+				"171",
+				"571",
+				"252",
+				"1022",
+				"319",
+				"3518",
+				"211",
+				"152",
+				"244",
+				"174",
+				"614",
+				"281",
+				"6969",
+				"258",
+				"1270",
+				"1554",
+				"163",
+				"171",
+				"271",
+				"967",
+				"2596",
+				"5358",
+				"305",
+				"695",
+				"725",
+				"156",
+				"663",
+				"431",
+				"238",
+				"199",
+				"918",
+				"280",
+				"160",
+				"187",
+				"413",
+				"171",
+				"745",
+				"661",
+				"179",
+				"294",
+				"331",
+				"264",
+				"137",
+				"1087",
+				"196",
+				"233",
+				"234",
+				"160",
+				"198",
+				"217",
+				"163",
+				"336",
+				"207",
+				"154",
+				"165",
+				"691",
+				"163",
+				"589",
+				"704",
+				"144",
+				"137",
+				"187",
+				"878",
+				"236",
+				"174",
+				"164",
+				"226",
+				"141",
+				"191",
+				"164",
+				"257",
+				"550",
+				"128",
+				"171",
+				"137",
+				"222",
+				"158",
+				"180",
+				"239",
+				"231",
+				"135",
+				"195",
+				"134",
+				"213",
+				"127"
+			],
+			"allTests": [
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				},
+				{
+					"Body includes hasMutation": true
+				}
+			],
+			"time": "127",
+			"totalRequestTime": 57021,
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 100,
+	"totalFail": 0,
+	"totalTime": 57021,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "http://teamknowlogydna-env.24csbvpgt9.us-east-1.elasticbeanstalk.com/mutation",
+			"id": "8b6e04a0-c165-4e83-a063-8c65d421171d",
+			"url": "http://teamknowlogydna-env.24csbvpgt9.us-east-1.elasticbeanstalk.com/mutation",
+			"time": "127",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"Body includes hasMutation": {
+					"pass": 100,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}

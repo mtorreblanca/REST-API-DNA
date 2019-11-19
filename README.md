@@ -12,25 +12,25 @@ Ejemplo:
 
 _Sin mutación:_
 
-|   |   |   |   |   |   |
-|---|---|---|---|---|---|
-| A | T | G | C | G | A |
-| C | A | G | T | G | C |
-| T | T | A | T | T | T |
-| A | G | A | C | G | G |
-| G | C | G | T | C | A |
-| T | C | A | C | T | G |
+|     |     |     |     |     |     |
+| --- | --- | --- | --- | --- | --- |
+| A   | T   | G   | C   | G   | A   |
+| C   | A   | G   | T   | G   | C   |
+| T   | T   | A   | T   | T   | T   |
+| A   | G   | A   | C   | G   | G   |
+| G   | C   | G   | T   | C   | A   |
+| T   | C   | A   | C   | T   | G   |
 
 _Con mutación:_
 
-|   |   |   |   |   |   |
-|---|---|---|---|---|---|
-| A | T | G | C | G | A |
-| C | A | G | T | G | C |
-| T | T | A | T | G | T |
-| A | G | A | A | G | G |
-| C | C | C | C | T | A |
-| T | C | A | C | T | G |
+|     |     |     |     |     |     |
+| --- | --- | --- | --- | --- | --- |
+| A   | T   | G   | C   | G   | A   |
+| C   | A   | G   | T   | G   | C   |
+| T   | T   | A   | T   | G   | T   |
+| A   | G   | A   | A   | G   | G   |
+| C   | C   | C   | C   | T   | A   |
+| T   | C   | A   | C   | T   | G   |
 
 ## End Points
 
@@ -42,7 +42,7 @@ A continnuación encontrarás los end points, su respectiva descripción y funci
 
 #### 1. _/mutation_
 
-La información se envía a traves de um HTTP POST con el siguiente formato
+La información se envía a traves de un método POST con el siguiente formato
 
 > {
 > “dna”:["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
@@ -58,9 +58,28 @@ En caso contrario un:
 
 #### 1. _/stats_
 
+La información se obtiene a traves de un método GET.
+
 Este end point regresa las estadísticas de las verificaciones de ADN en un formato como el siguiente:
 
 > {“count_mutations”:40, “count_no_mutation”:100, “ratio”:0.4}
 
+### Integration Testing
+
+Se hizo un integration Testing para cada endpoint. Se pueden conocer los detalles en la carpeta
+./coverage/index.html
+
+El resultado proviene del Code Coverage de Istanbul utilizando Mocha.
+
+Este testing solo puede realizarse localmente si se cuentan con las llaves de la DB para poder conectarse a ella.
+
+### API Testing
+
+Se utilizó POSTMAN como herramienta de Pruebas para la API para el endpoint de mutations.
+
+Los resultados se encuentran en formato json en el archivo EB.postman_test_run.json
+
+Se realizaron 100 peticiones por cada prueba. El tiempo de la prueba fue 57 segundos en total.
+
 **Dev: Marcelo Torreblanca**
-**Trabajemos juntos: contact@mtorreblanca.me**
+**Trabajemos juntos: m_torreblanca@outlook.com**
