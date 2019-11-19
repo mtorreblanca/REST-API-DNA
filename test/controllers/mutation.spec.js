@@ -1,7 +1,5 @@
 var mutationController = require("../../controllers/mutation");
 var chai = require("chai");
-var chaiAsPromised = require("chai-as-promised");
-chai.use(chaiAsPromised);
 chai.should();
 
 describe("Mutation Controller", function() {
@@ -23,7 +21,6 @@ describe("Mutation Controller", function() {
         }
       };
       mutationController.hasMutation(req, res, function(result) {
-        console.log(result);
         result.should.be.true;
         done();
       });
@@ -36,7 +33,6 @@ describe("Mutation Controller", function() {
         }
       };
       mutationController.hasMutation(req, res, function(result) {
-        console.log(result);
         result.should.be.true;
         done();
       });
@@ -49,7 +45,6 @@ describe("Mutation Controller", function() {
         }
       };
       mutationController.hasMutation(req, res, function(result) {
-        console.log(result);
         result.should.be.true;
         done();
       });
@@ -62,7 +57,6 @@ describe("Mutation Controller", function() {
         }
       };
       mutationController.hasMutation(req, res, function(result) {
-        console.log(result);
         result.should.be.true;
         done();
       });
@@ -76,7 +70,6 @@ describe("Mutation Controller", function() {
       };
       this.timeout(10000);
       mutationController.hasMutation(req, res, function(result) {
-        console.log(result);
         result.should.be.false;
         done();
       });

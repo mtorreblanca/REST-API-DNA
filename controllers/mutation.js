@@ -7,15 +7,15 @@ AWS.config.region = process.env.REGION;
 var docClient = new AWS.DynamoDB.DocumentClient();
 var ddbTable = process.env.STARTUP_SIGNUP_TABLE;
 
-exports.hasMutation = (req, res, next) => {
-  let info = req.body.dna;
+exports.hasMutation = function(req, res, cb) {
+  let dnaMatrix = req.body.dna;
 
-  result = hasMutation(info);
-  console.log(result);
+  var result = hasMutation(dnaMatrix);
+
   let dna = "";
 
-  for (let i = 0; i < info.length; i++) {
-    dna += info[i];
+  for (let i = 0; i < dnaMatrix.length; i++) {
+    dna += dnaMatrix[i];
   }
 
   var params = {
@@ -31,12 +31,15 @@ exports.hasMutation = (req, res, next) => {
       res.status(500).json({
         err: err
       });
+      cb(err);
     } else {
       if (result) {
         res.status(200).json({
           hasMutation: result
         });
+        cb(result);
       } else {
+        cb(result);
         res.status(403).json({
           hasMutation: result
         });

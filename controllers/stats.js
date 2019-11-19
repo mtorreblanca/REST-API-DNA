@@ -6,7 +6,7 @@ AWS.config.region = process.env.REGION;
 
 var docClient = new AWS.DynamoDB.DocumentClient();
 
-exports.getStats = (req, res, next) => {
+exports.getStats = (req, res, cb) => {
   var params = {
       TableName: "adnchains"
     },
@@ -30,6 +30,11 @@ exports.getStats = (req, res, next) => {
 
       ratio = count_mutations / count_no_mutation;
       res.status(200).json({
+        count_mutations: count_mutations,
+        count_no_mutation: count_no_mutation,
+        ratio: ratio.toFixed(2)
+      });
+      cb({
         count_mutations: count_mutations,
         count_no_mutation: count_no_mutation,
         ratio: ratio.toFixed(2)

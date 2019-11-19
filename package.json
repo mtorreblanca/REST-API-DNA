@@ -4,18 +4,25 @@
   "description": "Tutorial for REST API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "test": "mocha './test/**/*.spec.js'",
+    "start": "nodemon app.js",
+    "coverage": "nyc --reporter=html --reporter=text mocha './test/**/*.spec.js'"
   },
   "author": "Marcelo Torreblanca",
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.572.0",
     "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
     "express": "^4.16.4",
-    "express-validator": "^5.3.1"
+    "express-validator": "^5.3.1",
+    "lodash": "^4.17.15",
+    "mocha": "^6.2.2",
+    "sinon": "^7.5.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "nyc": "^14.1.1"
   }
 }
